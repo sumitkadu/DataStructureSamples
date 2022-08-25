@@ -16,7 +16,9 @@
 
             //GraphExample();
 
-            StackExample();
+            //StackExample();
+
+            QueueExample();
         }
 
         private static void BinaryTreeExample()
@@ -127,6 +129,32 @@
             myStack.Peek();
             Console.WriteLine("Item popped from Stack : {0}", myStack.Pop());
             myStack.PrintStack();
+        }
+
+        private static void QueueExample()
+        {
+            Queue.Queue myQueue = new Queue.Queue(4);
+  
+            myQueue.Enqueue(10);
+            myQueue.Enqueue(20);
+            myQueue.Enqueue(30);
+            myQueue.Enqueue(40);
+            myQueue.Enqueue(50);
+            myQueue.PrintQueue(); 
+            myQueue.Peek();
+
+            Console.WriteLine("\nOne item removed from queue");
+            myQueue.Dequeue();
+            myQueue.PrintQueue();
+            Console.WriteLine("\nOne item removed from queue");
+            myQueue.Dequeue();
+            myQueue.PrintQueue();
+            Console.WriteLine("\nOne item removed from queue");
+            myQueue.Dequeue();
+            myQueue.PrintQueue();
+            Console.WriteLine("\nOne item removed from queue");
+            myQueue.Dequeue();
+            myQueue.PrintQueue();
         }
     }   
 }
