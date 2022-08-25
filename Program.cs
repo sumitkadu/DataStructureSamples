@@ -19,6 +19,8 @@
             //StackExample();
 
             QueueExample();
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadLine();
         }
 
         private static void BinaryTreeExample()
