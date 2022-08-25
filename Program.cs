@@ -5,6 +5,7 @@
     using DataStructureSamples.BinaryTree;
     using DataStructureSamples.Trie;
     using DataStructureSamples.Graph;
+    using DataStructureSamples.Stack;
     public class Program
     {
         public static void Main()
@@ -13,7 +14,9 @@
 
             //TrieExample();
 
-            GraphExample();
+            //GraphExample();
+
+            StackExample();
         }
 
         private static void BinaryTreeExample()
@@ -110,6 +113,20 @@
             g.BreadthFirstSearch(2);
             Console.Write("\nDepth First Traversal from vertex 2:\n");
             g.DepthFirstSearch(2);
+        }
+
+        private static void StackExample()
+        {
+            Stack.Stack myStack = new Stack.Stack();
+  
+            myStack.Push(10);
+            myStack.Push(20);
+            myStack.Push(30);
+            myStack.Push(40);
+            myStack.PrintStack();
+            myStack.Peek();
+            Console.WriteLine("Item popped from Stack : {0}", myStack.Pop());
+            myStack.PrintStack();
         }
     }   
 }
